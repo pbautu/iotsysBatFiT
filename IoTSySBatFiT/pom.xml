@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>at.ac.tuwien.auto.probac</groupId>
+	<artifactId>IoTSySBatFiT</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>IoTSySBatFiT</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.ethz.inf.vs</groupId>
+			<artifactId>californium</artifactId>
+			<version>0.18.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>mkovatsc-github-releases</id>
+			<name>mkovatsc-github</name>
+			<url>https://github.com/mkovatsc/maven/raw/master/releases/</url>
+		</repository>
+		<repository>
+			<id>mkovatsc-github-snapshots</id>
+			<name>mkovatsc-github</name>
+			<url>https://github.com/mkovatsc/maven/raw/master/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>mkovatsc-github-thirdparty</id>
+			<name>mkovatsc-github</name>
+			<url>https://github.com/mkovatsc/maven/raw/master/thirdparty/</url>
+		</repository>
+	</repositories>
+
+</project>
